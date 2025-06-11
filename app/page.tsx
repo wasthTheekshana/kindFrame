@@ -259,33 +259,33 @@ export default function FaintFilmGallery() {
           )}
 
           {/* Grid/Slider Toggle - Responsive */}
-          <div className="fixed bottom-4 sm:bottom-8 left-0 right-0 flex justify-center z-40 px-4">
-            <motion.div
-                className="bg-white border border-gray-300 rounded-full shadow-sm max-w-xs w-full"
-                initial={{ y: 50, opacity: 0 }}
-                animate={{ y: 0, opacity: 1 }}
-                transition={{ duration: 0.6, delay: 0.5 }}
-            >
-              <div className="flex items-center justify-center">
-                <Button
-                    variant={viewMode === "grid" ? "secondary" : "ghost"}
-                    size="sm"
-                    onClick={() => setViewMode("grid")}
-                    className={`rounded-l-full px-3 sm:px-6 py-1 sm:py-2 text-xs sm:text-sm ${viewMode === "grid" ? "bg-gray-100" : ""}`}
-                >
-                  Grid
-                </Button>
-                <Button
-                    variant={viewMode === "slider" ? "secondary" : "ghost"}
-                    size="sm"
-                    onClick={() => setViewMode("slider")}
-                    className={`rounded-r-full px-3 sm:px-6 py-1 sm:py-2 text-xs sm:text-sm ${viewMode === "slider" ? "bg-gray-100" : ""}`}
-                >
-                  Slider
-                </Button>
-              </div>
-            </motion.div>
-          </div>
+          {/*<div className="fixed bottom-4 sm:bottom-8 left-0 right-0 flex justify-center z-40 px-4">*/}
+          {/*  <motion.div*/}
+          {/*      className="bg-white border border-gray-300 rounded-full shadow-sm max-w-xs w-full"*/}
+          {/*      initial={{ y: 50, opacity: 0 }}*/}
+          {/*      animate={{ y: 0, opacity: 1 }}*/}
+          {/*      transition={{ duration: 0.6, delay: 0.5 }}*/}
+          {/*  >*/}
+          {/*    <div className="flex items-center justify-center">*/}
+          {/*      <Button*/}
+          {/*          variant={viewMode === "grid" ? "secondary" : "ghost"}*/}
+          {/*          size="sm"*/}
+          {/*          onClick={() => setViewMode("grid")}*/}
+          {/*          className={`rounded-l-full px-3 sm:px-6 py-1 sm:py-2 text-xs sm:text-sm ${viewMode === "grid" ? "bg-gray-100" : ""}`}*/}
+          {/*      >*/}
+          {/*        Grid*/}
+          {/*      </Button>*/}
+          {/*      <Button*/}
+          {/*          variant={viewMode === "slider" ? "secondary" : "ghost"}*/}
+          {/*          size="sm"*/}
+          {/*          onClick={() => setViewMode("slider")}*/}
+          {/*          className={`rounded-r-full px-3 sm:px-6 py-1 sm:py-2 text-xs sm:text-sm ${viewMode === "slider" ? "bg-gray-100" : ""}`}*/}
+          {/*      >*/}
+          {/*        Slider*/}
+          {/*      </Button>*/}
+          {/*    </div>*/}
+          {/*  </motion.div>*/}
+          {/*</div>*/}
 
           {/* Copyright - Responsive */}
           <div className="fixed bottom-1 sm:bottom-4 right-2 sm:right-4 text-xs text-gray-500">© 2025 Kind Frame</div>
