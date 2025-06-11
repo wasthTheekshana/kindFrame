@@ -3,7 +3,7 @@ import './globals.css'
 
 export const metadata: Metadata = {
   title: 'Kind Frame',
-  description: 'Created by Theekshana Harischandra',
+  description: 'Created by TH',
   generator: 'Theekshana Harischandra',
 }
 
