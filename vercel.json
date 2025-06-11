@@ -1,8 +1,19 @@
 {
   "redirects": [
     {
+      "source": "www.kindframe.me",
+      "destination": "https://kindframe.me",
+      "permanent": true
+    },
+    {
       "source": "/(.*)",
-      "destination": "https://kindframe.me/$1",
+      "has": [
+        {
+          "type": "host",
+          "value": "www.kindframe.me"
+        }
+      ],
+      "destination": "https://kindframe.me/:1",
       "permanent": true
     }
   ]
